@@ -1,0 +1,22 @@
+# Python & Jupyter checkpoints
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Ignore other labs and materials
+Assignment01*
+Lab02*
+lab_3*
+lab4*
+lab5*
+lab_manulas/
+learning_material/
+
+# Ignore other datasets (keep only Lab 6 dataset)
+data/*
+!data/Messy_Employee_dataset.csv
+
+# Archives & environments
+*.zip
+venv/
+.venv/
