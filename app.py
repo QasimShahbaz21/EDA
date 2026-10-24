@@ -30,8 +30,25 @@ render_html("""
 
 <style>
 /* Global Clean Typography */
-html, body, [class*="css"], .stApp, .stMarkdown, .stText, p, span, label, button, input {
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+html, body, .stApp {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, label, .stMarkdown, .stSelectbox, .stMultiSelect, .stRadio, .stSlider {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Preserve Streamlit Material Icons for sidebar collapse/expand controls */
+[data-testid="stIconMaterial"], 
+[data-testid="stSidebarCollapseButton"] span, 
+[data-testid="collapsedControl"] span,
+button[kind="header"] span,
+.material-symbols-rounded, 
+.material-symbols-outlined, 
+.material-icons {
+    font-family: 'Material Symbols Rounded', 'Material Symbols Outlined', 'Material Icons' !important;
+    font-size: 1.25rem !important;
+    letter-spacing: normal !important;
 }
 
 /* Base Canvas */
